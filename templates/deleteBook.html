@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Add Book{% endblock %}
+
+{% block body %}
+<!--
+<h2> Are you sure you want to delete {{book.title}}? </h2>
+<form action="#" method='post'>
+    <button type="submit"> Delete</button>
+    <a href='{{url_for('showBooks')}}'>
+    <button> Cancel</button>
+    </a>
+</form>
+-->
+
+<h2> Are you sure you want to delete {{book.title}}? </h2>
+<form action="" method="post">
+    <button type="submit" class="btn btn-primary">Delete</button>
+    <a href='{{url_for('showBooks')}}' class="btn btn-danger">Cancel
+    </a>
+</form>
+{% endblock %}
